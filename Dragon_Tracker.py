@@ -1,6 +1,5 @@
 #!/usr/bin/python
-# << CODE BY SHADOW_SADIST >>
-# LOL
+#MORE SCRIPTS >> https://github.com/Rip70022
 
 # IMPORT MODULE
 
@@ -169,9 +168,9 @@ def showIP():
     respone = requests.get('https://api.ipify.org/')
     Show_IP = respone.text
 
-    print(f"\n {Wh}========== {Gr}SHOW INFORMATION YOUR IP {Wh}==========")
+    print(f"\n {Wh} ────────── {Gr}SHOW INFORMATION YOUR IP {Wh}──────────")
     print(f"\n {Wh}[{Gr} + {Wh}] Your IP Adrress : {Gr}{Show_IP}")
-    print(f"\n {Wh}==============================================")
+    print(f"\n {Wh}───────────────────────────────────────────────")
 
 
 # OPTIONS
@@ -216,13 +215,13 @@ def clear():
 
 def call_option(opt):
     if not is_in_options(opt):
-        raise ValueError('Option not found')
+        raise ValueError('[X] Option not found')
     for option in options:
         if option['num'] == opt:
             if 'func' in option:
                 option['func']()
             else:
-                print('No function detected')
+                print('[!] No function detected')
 
 
 def execute_option(opt):
